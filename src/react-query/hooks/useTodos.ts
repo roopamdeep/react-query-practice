@@ -14,7 +14,7 @@ const useTodos = () => {
           .then((res) => res.data);
     
       return  useQuery<Todo[], Error>({
-        queryKey: ["todos", { completed: true }],
+        queryKey: ["todos"],
         queryFn: fetchTodos,
       });
     
